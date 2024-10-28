@@ -1,5 +1,4 @@
 <script setup>
-
 import DeviceHead from '@/components/DeviceHead.vue'
 import DeviceCard from '@/components/DeviceCard.vue'
 
@@ -85,9 +84,9 @@ const scaner = [
 
 <!--  section 3  -->
 
-  <div class="relative h-[600px]">
-    <div class="absolute h-[600px] w-full bg-amber-300 flex justify-center items-center text-3xl text-bold"></div>
-  </div>
+<!--  <div class="relative h-[600px]">-->
+<!--    <div class="absolute h-[600px] w-full bg-amber-300 flex justify-center items-center text-3xl text-bold"></div>-->
+<!--  </div>-->
 
 <!--  section 4  -->
 
@@ -145,5 +144,7 @@ const scaner = [
       </div>
     </div>
   </div>
+
+
 
 </template>

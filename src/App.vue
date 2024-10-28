@@ -14,8 +14,10 @@ import Footer from './components/Footer.vue'
         <RouterView />
       </main>
 
-      <Footer />
     </div>
+  </div>
+  <div class="bg-[#010D50]">
+    <Footer />
   </div>
 
 </template>

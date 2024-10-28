@@ -9,8 +9,10 @@ defineProps({
 </script>
 <template>
   <div
-    style="background: linear-gradient(180deg, rgba(3, 40, 238, 0.70), rgba(204, 204, 204, 0.00));"
-    class="py-5 px-8 rounded-2xl  text-center border-white border"
+    style="background: linear-gradient(180deg, rgba(3, 40, 238, 0.75) 0%, rgba(60, 74, 144, 1) 30%, rgba(60, 74, 144, 1) 70%, rgba(3, 40, 238, 0.75) 100%);
+;
+"
+    class="py-5 px-8 rounded-2xl  text-center "
     :class="width"
   >
     <div class="mb-5 text-white text-2xl font-bold">{{ head }}</div>
