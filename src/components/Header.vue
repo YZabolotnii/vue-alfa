@@ -35,8 +35,8 @@ const mobileMenuOpen = ref(false)
 </script>
 <template>
   <header class="">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-      <div class="flex lg:flex-1 ">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between py-6 lg:px-8" aria-label="Global">
+      <div class="flex lg:flex-1 mr-10">
         <a href="#" class="-m-1.5 p-1.5 flex align-center">
           <img class="h-8 w-auto" src="@/assets/Main-logo.svg" alt="Logo" loading="lazy">/>
         </a>
@@ -47,7 +47,7 @@ const mobileMenuOpen = ref(false)
           <Bars3Icon class="h-6 w-6" aria-hidden="true" />
         </button>
       </div>
-      <PopoverGroup class="hidden lg:flex lg:gap-x-12">
+      <PopoverGroup class="hidden lg:flex lg:gap-x-9">
         <RouterLink v-for="item in menu" :key="item.id" :to="item.link" class="text-sm font-semibold leading-6 text-white">
           {{ item.name }}
         </RouterLink>
