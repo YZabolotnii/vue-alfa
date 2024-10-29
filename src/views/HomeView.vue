@@ -32,8 +32,7 @@ const scaner = [
 <template>
   <!--  section 1  -->
   <div class="p-8 flex flex-col items-center w-full">
-    <div class="h-[600px] w-[900px] bg-amber-300 flex justify-center items-center text-3xl text-bold"><span>Я картинка
-      <a class="text-blue-500" href="https://www.youtube.com/watch?v=RolHPRDBz2M" target="_blank">тиць</a></span></div>
+    <div class="h-[600px] w-[900px] bg-amber-300 flex justify-center items-center text-3xl text-bold"><span>картинка</span></div>
   </div>
 
   <!--  section 2  -->
@@ -133,7 +132,7 @@ const scaner = [
       <DeviceHead deviceTitle="СКАНЕРИ" />
       <div class="grid grid-cols-2 gap-8 w-fit my-16 ml-auto">
         <DeviceCard
-          v-for="item in tacheometr"
+          v-for="item in scaner"
           :key="item.id"
           :head="item.head"
           :img="item.img"

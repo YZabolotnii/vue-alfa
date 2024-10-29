@@ -38,7 +38,7 @@ const mobileMenuOpen = ref(false)
     <nav class="mx-auto flex max-w-7xl items-center justify-between py-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1 mr-10">
         <a href="#" class="-m-1.5 p-1.5 flex align-center">
-          <img class="h-8 w-auto" src="@/assets/Main-logo.svg" alt="Logo" loading="lazy">/>
+          <img class="h-8 w-auto" src="@/assets/alfa.svg" alt="Logo" loading="lazy">/>
         </a>
       </div>
       <div class="flex lg:hidden">
