@@ -31,12 +31,12 @@ const scaner = [
 </script>
 <template>
   <!--  section 1  -->
-  <div class="p-8 flex flex-col items-center w-full">
-    <div class="h-[600px] w-[900px] bg-amber-300 flex justify-center items-center text-3xl text-bold"><span>картинка</span></div>
+  <div class="mt-8 flex flex-col items-center w-full">
+    <div class="h-[600px] w-full bg-amber-300 flex justify-center items-center text-3xl text-bold"><span>картинка</span></div>
   </div>
 
   <!--  section 2  -->
-  <div class="p-8 mb-16">
+  <div class="">
     <div class="my-16">
       <h1 class="text-white text-5xl font-bold mb-5">
         Наші досягнення
@@ -89,61 +89,85 @@ const scaner = [
 
 <!--  section 4  -->
 
-  <div class="mt-32">
-    <div>
-      <DeviceHead deviceTitle="GNSS - ПРИЙМАЧІ" />
-      <div class="grid grid-cols-3 gap-8 w-fit my-16 ml-auto">
-        <DeviceCard
-          v-for="item in gnss"
-          :key="item.id"
-          :head="item.head"
-          :img="item.img"
-          :text="item.text"
-          :link="item.link"
-          width="w-[270px]"
-        />
-      </div>
-    </div>
-  </div>
+<!--  <div class="mt-32">-->
+<!--    <div>-->
+<!--      <DeviceHead deviceTitle="GNSS - ПРИЙМАЧІ" />-->
+<!--      <div class="grid grid-cols-3 gap-8 w-fit my-16 ml-auto">-->
+<!--        <DeviceCard-->
+<!--          v-for="item in gnss"-->
+<!--          :key="item.id"-->
+<!--          :head="item.head"-->
+<!--          :img="item.img"-->
+<!--          :text="item.text"-->
+<!--          :link="item.link"-->
+<!--          width="w-[270px]"-->
+<!--        />-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
 
 <!--  section 5  -->
 
-  <div class="mt-32">
-    <div>
-      <DeviceHead deviceTitle="ТАХЕОМЕТРИ" />
-      <div class="grid grid-cols-2 gap-8 w-fit my-16 ml-auto">
-        <DeviceCard
-          v-for="item in tacheometr"
-          :key="item.id"
-          :head="item.head"
-          :img="item.img"
-          :text="item.text"
-          :link="item.link"
-          width="w-[350px]"
-        />
-      </div>
-    </div>
-  </div>
+<!--  <div class="mt-32">-->
+<!--    <div>-->
+<!--      <DeviceHead deviceTitle="ТАХЕОМЕТРИ" />-->
+<!--      <div class="grid grid-cols-2 gap-8 w-fit my-16 ml-auto">-->
+<!--        <DeviceCard-->
+<!--          v-for="item in tacheometr"-->
+<!--          :key="item.id"-->
+<!--          :head="item.head"-->
+<!--          :img="item.img"-->
+<!--          :text="item.text"-->
+<!--          :link="item.link"-->
+<!--          width="w-[350px]"-->
+<!--        />-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
 
 <!--  section 6  -->
 
-  <div class="mt-32">
-    <div>
-      <DeviceHead deviceTitle="СКАНЕРИ" />
-      <div class="grid grid-cols-2 gap-8 w-fit my-16 ml-auto">
-        <DeviceCard
-          v-for="item in scaner"
-          :key="item.id"
-          :head="item.head"
-          :img="item.img"
-          :text="item.text"
-          :link="item.link"
-          width="w-[350px]"
-        />
-      </div>
-    </div>
-  </div>
+<!--  <div class="mt-32">-->
+<!--    <div>-->
+<!--      <DeviceHead deviceTitle="СКАНЕРИ" />-->
+<!--      <div class="grid grid-cols-2 gap-8 w-fit my-16 ml-auto">-->
+<!--        <DeviceCard-->
+<!--          v-for="item in scaner"-->
+<!--          :key="item.id"-->
+<!--          :head="item.head"-->
+<!--          :img="item.img"-->
+<!--          :text="item.text"-->
+<!--          :link="item.link"-->
+<!--          width="w-[350px]"-->
+<!--        />-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
 
+<!--  section 7  -->
 
+<!--  <div class="mt-32">-->
+<!--    <div class="flex justify-between items-center gap-10">-->
+<!--      <div class="flex flex-col gap-10">-->
+<!--        <div class="text-white text-5xl font-bold">А подивитись відео про прилади ви можете тут</div>-->
+<!--        <div><img src="@/assets/arrow.svg" alt="arrow"></div>-->
+<!--      </div>-->
+<!--      <div >-->
+<!--        <div class="w-[750px] h-[400px] bg-indigo-700"></div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--  section 8  -->
+
+<!--  <div class="my-32">-->
+<!--    <div class="bg-[#0328EE] rounded-3xl px-10 pt-10">-->
+<!--      <div class="text-white text-3xl font-bold uppercase mb-10">НАШЕ МІСЦЕЗНАХОДЖЕННЯ</div>-->
+<!--      <div class="flex justify-between gap-10">-->
+<!--          <img class="w-[300px]" src="@/assets/phone.png" alt="">-->
+<!--          <img class="w-[700px] h-3/4" src="@/assets/maps.png" alt="maps">-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
 
 </template>

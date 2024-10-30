@@ -10,14 +10,14 @@ import Footer from './components/Footer.vue'
     <div class="flex-grow flex flex-col max-w-7xl mx-auto px-10">
       <Header />
 
-      <main class="flex-grow content mb-80" id="content" role="main">
+      <main class="flex-grow content" id="content" role="main">
         <RouterView />
       </main>
 
     </div>
   </div>
   <div class="bg-[#010D50]">
-    <Footer />
+<!--    <Footer />-->
   </div>
 
 </template>
