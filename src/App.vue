@@ -7,7 +7,7 @@ import Footer from './components/Footer.vue'
 <template>
 
   <div class="flex flex-col min-h-screen bg-[#010725]">
-    <div class="flex-grow flex flex-col max-w-7xl mx-auto px-10">
+    <div class="flex-grow flex flex-col max-w-7xl mx-auto px-10 max-[1028px]:px-6">
       <Header />
 
       <main class="flex-grow content" id="content" role="main">
@@ -17,7 +17,7 @@ import Footer from './components/Footer.vue'
     </div>
   </div>
   <div class="bg-[#010D50]">
-<!--    <Footer />-->
+    <Footer />
   </div>
 
 </template>

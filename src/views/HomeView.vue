@@ -29,10 +29,24 @@ const scaner = [
 ]
 
 </script>
+<style scoped>
+.main-img {
+  background-image: url('../assets/laptop.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 100vh; /* або інший розмір залежно від ваших вимог */
+}
+</style>
 <template>
   <!--  section 1  -->
-  <div class="mt-8 flex flex-col items-center w-full">
-    <div class="h-[600px] w-full bg-amber-300 flex justify-center items-center text-3xl text-bold"><span>картинка</span></div>
+  <div class="mt-8 flex flex-col items-center w-full max-[500px]:-mb-8 max-[500px]:-mt-3">
+    <div class="w-full flex justify-center items-center text-3xl text-bold">
+
+      <div class="main-img w-full h-full max-[1028px]:!w-3/4 max-[1028px]:!h-[400px] max-[900px]:!h-[300px] max-[700px]:!h-[250px] max-[600px]:!h-[200px]"></div>
+
+    </div>
   </div>
 
   <!--  section 2  -->
@@ -50,7 +64,7 @@ const scaner = [
     </div>
 
     <div class="mr-8 mb-16">
-      <div class="grid grid-cols-2 gap-y-10 gap-x-32 w-fit mx-auto">
+      <div class="grid grid-cols-2 gap-y-10 gap-x-32 w-fit mx-auto max-[1028px]:gap-6	max-[768px]:grid-cols-1">
         <div
           v-for="item in achievements"
           :key="item.id"
@@ -61,9 +75,9 @@ const scaner = [
           </div>
           <div
             style="background: linear-gradient(90deg, #0228EE 0%, #011788 100%)"
-            class="ml-8 w-[350px] rounded-xl px-8 py-4 h-[100px] flex items-center "
+            class="ml-8 w-[350px] rounded-xl px-8 py-4 h-[100px] flex items-center max-[1028px]:px-3 max-[1028px]:py-1 max-[1028px]:w-[300px] max-[1028px]:h-[80px]"
           >
-            <div class="text-xl text-white pb-1 uppercase" v-html="item.bText"></div>
+            <div class="text-xl text-white pb-1 uppercase max-[1028px]:text-lg" v-html="item.bText"></div>
           </div>
         </div>
       </div>
@@ -89,85 +103,85 @@ const scaner = [
 
 <!--  section 4  -->
 
-<!--  <div class="mt-32">-->
-<!--    <div>-->
-<!--      <DeviceHead deviceTitle="GNSS - ПРИЙМАЧІ" />-->
-<!--      <div class="grid grid-cols-3 gap-8 w-fit my-16 ml-auto">-->
-<!--        <DeviceCard-->
-<!--          v-for="item in gnss"-->
-<!--          :key="item.id"-->
-<!--          :head="item.head"-->
-<!--          :img="item.img"-->
-<!--          :text="item.text"-->
-<!--          :link="item.link"-->
-<!--          width="w-[270px]"-->
-<!--        />-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
+  <div class="mt-32">
+    <div>
+      <DeviceHead deviceTitle="GNSS - ПРИЙМАЧІ" />
+      <div class="grid grid-cols-3 gap-8 w-fit my-16 ml-auto max-[1028px]:mx-auto max-[1028px]:flex-wrap max-[1028px]:grid-cols-2 max-[640px]:grid-cols-1">
+        <DeviceCard
+          v-for="item in gnss"
+          :key="item.id"
+          :head="item.head"
+          :img="item.img"
+          :text="item.text"
+          :link="item.link"
+          width="w-[270px]"
+        />
+      </div>
+    </div>
+  </div>
 
 <!--  section 5  -->
 
-<!--  <div class="mt-32">-->
-<!--    <div>-->
-<!--      <DeviceHead deviceTitle="ТАХЕОМЕТРИ" />-->
-<!--      <div class="grid grid-cols-2 gap-8 w-fit my-16 ml-auto">-->
-<!--        <DeviceCard-->
-<!--          v-for="item in tacheometr"-->
-<!--          :key="item.id"-->
-<!--          :head="item.head"-->
-<!--          :img="item.img"-->
-<!--          :text="item.text"-->
-<!--          :link="item.link"-->
-<!--          width="w-[350px]"-->
-<!--        />-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
+  <div class="mt-32">
+    <div>
+      <DeviceHead deviceTitle="ТАХЕОМЕТРИ" />
+      <div class="grid grid-cols-2 gap-8 w-fit my-16 ml-auto max-[768px]:mx-auto max-[768px]:grid-cols-1">
+        <DeviceCard
+          v-for="item in tacheometr"
+          :key="item.id"
+          :head="item.head"
+          :img="item.img"
+          :text="item.text"
+          :link="item.link"
+          width="w-[350px]"
+        />
+      </div>
+    </div>
+  </div>
 
 <!--  section 6  -->
 
-<!--  <div class="mt-32">-->
-<!--    <div>-->
-<!--      <DeviceHead deviceTitle="СКАНЕРИ" />-->
-<!--      <div class="grid grid-cols-2 gap-8 w-fit my-16 ml-auto">-->
-<!--        <DeviceCard-->
-<!--          v-for="item in scaner"-->
-<!--          :key="item.id"-->
-<!--          :head="item.head"-->
-<!--          :img="item.img"-->
-<!--          :text="item.text"-->
-<!--          :link="item.link"-->
-<!--          width="w-[350px]"-->
-<!--        />-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
+  <div class="mt-32">
+    <div>
+      <DeviceHead deviceTitle="СКАНЕРИ" />
+      <div class="grid grid-cols-2 gap-8 w-fit my-16 ml-auto max-[768px]:mx-auto max-[768px]:grid-cols-1">
+        <DeviceCard
+          v-for="item in scaner"
+          :key="item.id"
+          :head="item.head"
+          :img="item.img"
+          :text="item.text"
+          :link="item.link"
+          width="w-[350px]"
+        />
+      </div>
+    </div>
+  </div>
 
 <!--  section 7  -->
 
-<!--  <div class="mt-32">-->
-<!--    <div class="flex justify-between items-center gap-10">-->
-<!--      <div class="flex flex-col gap-10">-->
-<!--        <div class="text-white text-5xl font-bold">А подивитись відео про прилади ви можете тут</div>-->
-<!--        <div><img src="@/assets/arrow.svg" alt="arrow"></div>-->
-<!--      </div>-->
-<!--      <div >-->
-<!--        <div class="w-[750px] h-[400px] bg-indigo-700"></div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
+  <div class="mt-32">
+    <div class="flex justify-between items-center gap-10 max-[1028px]:flex-col">
+      <div class="flex flex-col gap-10">
+        <div class="text-white text-5xl font-bold">А подивитись відео про прилади ви можете тут</div>
+        <div><img src="@/assets/arrow.svg" alt="arrow"></div>
+      </div>
+      <div >
+        <div class="w-[650px] h-[400px] bg-indigo-700 max-[1028px]:w-[300px]"></div>
+      </div>
+    </div>
+  </div>
 
 <!--  section 8  -->
 
-<!--  <div class="my-32">-->
-<!--    <div class="bg-[#0328EE] rounded-3xl px-10 pt-10">-->
-<!--      <div class="text-white text-3xl font-bold uppercase mb-10">НАШЕ МІСЦЕЗНАХОДЖЕННЯ</div>-->
-<!--      <div class="flex justify-between gap-10">-->
-<!--          <img class="w-[300px]" src="@/assets/phone.png" alt="">-->
-<!--          <img class="w-[700px] h-3/4" src="@/assets/maps.png" alt="maps">-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
+  <div class="my-32">
+    <div class="bg-[#0328EE] rounded-3xl px-10 pt-10 max-[1100px]:px-5">
+      <div class="text-white text-3xl font-bold uppercase mb-10 text-center">НАШЕ МІСЦЕЗНАХОДЖЕННЯ</div>
+      <div class="flex justify-between gap-10">
+          <img class="w-[250px] mx-auto max-[1028px]:hidden" src="@/assets/phone.png" alt="">
+          <img class="w-[650px] pb-10 max-[1028px]:w-full" src="@/assets/maps.png" alt="maps">
+      </div>
+    </div>
+  </div>
 
 </template>

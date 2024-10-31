@@ -2,7 +2,7 @@
 
 </script>
 <template>
-  <div class="max-w-7xl mx-auto p-16 flex flex-col gap-10">
+  <div class="max-w-7xl mx-auto p-16 flex flex-col gap-10 max-[1028px]:p-8">
     <div class="flex items-center justify-between">
       <div><img class="h-8 w-auto" src="@/assets/alfa.svg" alt="Logo" loading="lazy"></div>
       <div class="flex items-center gap-5">
@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <div class="flex justify-between">
+    <div class="flex justify-between max-md:flex-col-reverse">
       <div class="text-white">
         <span>Адреса:</span> <br>
         <span>вул. Гетьмана Павла Полуботка, </span> <br>
@@ -22,7 +22,7 @@
         <span>Email:</span> <br>
         <span class="underline"><a href="">office.geofix@gmail.com</a></span>
       </div>
-      <div class="p-8 bg-[#ffffff1a] rounded-2xl">
+      <div class="p-8 bg-[#ffffff1a] rounded-2xl max-md:p-4 w-fit max-md:mx-auto max-md:mb-8">
         <div class="uppercase text-white text-sm font-bold mb-5">ФОРМА ЗВОРОТНЬОГО ЗВ’ЯЗКУ</div>
         <form class="w-80">
           <div class="mb-5">
