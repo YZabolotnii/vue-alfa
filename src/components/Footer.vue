@@ -1,5 +1,4 @@
 <script setup>
-
 </script>
 <template>
   <div class="max-w-7xl mx-auto p-16 flex flex-col gap-10 max-[1028px]:p-8">
@@ -24,7 +23,7 @@
       </div>
       <div class="p-8 bg-[#ffffff1a] rounded-2xl max-md:p-4 w-fit max-md:mx-auto max-md:mb-8">
         <div class="uppercase text-white text-sm font-bold mb-5">ФОРМА ЗВОРОТНЬОГО ЗВ’ЯЗКУ</div>
-        <form class="w-80">
+        <form class="w-80 max-sm:w-64">
           <div class="mb-5">
             <input type="text" id="pib" class="bg-[#0328ee4d] border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="ПІБ" required />
           </div>

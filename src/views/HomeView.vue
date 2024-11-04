@@ -52,7 +52,7 @@ const scaner = [
   <!--  section 2  -->
   <div class="">
     <div class="my-16">
-      <h1 class="text-white text-5xl font-bold mb-5">
+      <h1 class="text-white text-5xl max-sm:text-2xl w-sm:text-2xl w-sm:text-2xl w-sm:text-2xl font-bold mb-5">
         Наші досягнення
       </h1>
       <div class="text-white">
@@ -163,7 +163,7 @@ const scaner = [
   <div class="mt-32">
     <div class="flex justify-between items-center gap-10 max-[1028px]:flex-col">
       <div class="flex flex-col gap-10">
-        <div class="text-white text-5xl font-bold">А подивитись відео про прилади ви можете тут</div>
+        <div class="text-white text-5xl max-sm:text-2xl w-sm:text-2xl w-sm:text-2xl w-sm:text-2xl font-bold">А подивитись відео про прилади ви можете тут</div>
         <div><img src="@/assets/arrow.svg" alt="arrow"></div>
       </div>
       <div >
