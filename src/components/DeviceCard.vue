@@ -4,7 +4,8 @@ defineProps({
   img: String,
   text: String,
   link: String,
-  width: String
+  width: String,
+  height: String
 })
 </script>
 <template>
@@ -16,7 +17,7 @@ defineProps({
     :class="width"
   >
     <div class="mb-5 text-white text-2xl font-bold">{{ head }}</div>
-    <div class="mb-5 h-[150px] w-full bg-blue-700">item.img</div>
+    <div :class="height" class="mb-5 w-full"><img class="text-center inline-block" :src="img" alt=""></div>
     <div class="mb-5 text-white">{{ text }}</div>
     <div class="mb-5 h-0.5 w-full bg-white"></div>
     <div class="uppercase py-1 px-4 bg-white rounded-3xl w-fit mx-auto">

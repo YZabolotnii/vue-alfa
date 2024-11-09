@@ -7,8 +7,8 @@ import Footer from './components/Footer.vue'
 <template>
 
   <div class="flex flex-col min-h-screen bg-[#010725]">
-    <div class="flex-grow flex flex-col max-w-7xl mx-auto px-10 max-[1028px]:px-6">
-      <Header />
+    <div class="flex-grow flex flex-col">
+      <Header class="max-w-7xl mx-auto max-lg:mx-0 px-10 max-[1028px]:px-6"/>
 
       <main class="flex-grow content" id="content" role="main">
         <RouterView />

@@ -12,7 +12,7 @@
     </div>
 
     <div class="flex justify-between max-md:flex-col-reverse">
-      <div class="text-white">
+      <div class="text-white max-md:text-center">
         <span>Адреса:</span> <br>
         <span>вул. Гетьмана Павла Полуботка, </span> <br>
         <span>будинок 52, офіс 218, Київ, 02094</span> <br>
