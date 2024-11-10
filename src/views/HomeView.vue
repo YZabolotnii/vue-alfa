@@ -38,7 +38,14 @@ const scaner = [
   width: 100%;
   height: 100vh; /* або інший розмір залежно від ваших вимог */
 }
-
+.bg-dots {
+  background-image: url('../assets/bg-dots.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  opacity: 0.3;
+}
 </style>
 <template>
   <!--  section 1  -->
@@ -87,11 +94,37 @@ const scaner = [
     </div>
 
     <div>
-      <div class="flex w-full gap-8">
-        <div class="w-2/3 h-[450px] rounded-xl" style="background: #0328EE;"></div>
-        <div class="w-1/3 flex flex-col gap-8">
-          <div class="h-1/2 rounded-xl" style="background: #0328EE;"></div>
-          <div class="h-1/2 rounded-xl" style="background: #0328EE;"></div>
+      <div class="flex w-full gap-8 max-md:flex-col">
+        <div class="relative w-2/3 max-md:w-full h-[450px] max-md:h-[250px] rounded-[40px]" style="background: #0328EE;">
+          <div class="mr-10 max-md:mr-0">
+            <div class="opacity-100 uppercase py-1 px-10 my-7 bg-white rounded-xl w-fit ml-auto max-md:mx-auto">
+              <router-link to="/">ДЕТАЛЬНІШЕ</router-link>
+            </div>
+          </div>
+          <div class="bg-dots rounded-xl max-md:h-fit"></div>
+          <div class="absolute max-md:top-[40%] top-[70%] left-[10%]">
+            <span class="text-white text-xl">Ручний лазерний RTK</span> <br>
+            <span><img class="mt-3 mb-[-30px]" src="@/assets/g-line.png" alt=""></span> <br>
+            <span class="uppercase text-[60px] font-bold text-white">GeoPuls</span>
+          </div>
+        </div>
+        <div class="w-1/3 max-md:hidden flex flex-col gap-8">
+          <div class="relative h-1/2 rounded-xl" style="background: #0328EE;">
+            <div class="bg-dots !h-full"></div>
+            <div class="absolute top-[30%] left-[5%]">
+              <span class="text-white text-xl">GNSS - приймач</span> <br>
+              <span><img class="w-[70%] mt-3 mb-[-30px]" src="@/assets/g-line.png" alt=""></span> <br>
+              <span class="uppercase text-[40px] font-bold text-white">Matrix ii</span>
+            </div>
+          </div>
+          <div class="relative h-1/2 rounded-xl" style="background: #0328EE;">
+            <div class="bg-dots !h-full"></div>
+            <div class="absolute top-[30%] left-[5%]">
+              <span class="text-white text-xl">Ручний сканер</span> <br>
+              <span><img class="w-[70%] mt-3 mb-[-30px]" src="@/assets/g-line.png" alt=""></span> <br>
+              <span class="uppercase text-[40px] font-bold text-white">Slam r 100</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -180,10 +213,12 @@ const scaner = [
     <div class="flex justify-between items-center gap-10 max-[1028px]:flex-col">
       <div class="flex flex-col gap-10">
         <div class="text-white text-5xl max-sm:text-2xl w-sm:text-2xl w-sm:text-2xl w-sm:text-2xl font-bold">А подивитись відео про прилади ви можете тут</div>
-        <div><img src="@/assets/arrow.svg" alt="arrow"></div>
+        <div class="max-lg:hidden" ><img src="@/assets/arrow.svg" alt="arrow"></div>
       </div>
       <div >
-        <div class="w-[650px] h-[400px] bg-indigo-700 max-[1028px]:w-[300px]"></div>
+        <div class="">
+          <iframe class="w-[650px] max-lg:w-[600px] max-md:w-[500px] max-sm:w-[350px] max-[400px]:w-[300px] h-[400px] max-md:h-[300px] max-sm:h-[250px] max-[400px]:h-[200px]" src="https://www.youtube.com/embed/ax2J_teXgH8?si=kB2q_68iOVcZrqbj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
