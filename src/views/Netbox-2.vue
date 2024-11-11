@@ -63,22 +63,22 @@ const inshe = [
 <template>
   <div class="max-w-7xl px-10 max-[1028px]:px-6 mx-auto">
     <div class="w-full flex justify-between items-center max-w-7xl mx-auto my-16">
-      <div class="w-1/2">
+      <div class="w-1/2 max-lg:w-full max-lg:max-w-lg max-lg:mx-auto">
         <div class="text-white text-[60px] font-bold text-center mb-10 max-lg:text-[40px]">NETBOX 2 LITE</div>
         <div
           style="background: rgba(255, 255, 255, 0.60); box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25)"
-          class="rounded-3xl p-16 text-center max-lg:p-8"
+          class="rounded-3xl rounded-b-none text-center lg:hidden p-8 "
         >
-          <img class="w-full " src="@/assets/g-2-lg.png" alt="">
+          <img class="text-center w-[300px] mx-auto" src="@/assets/g-2-lg.png" alt="">
         </div>
         <div
-          class="rounded-3xl px-10 py-16 text-white text-5xl text-center max-lg:px-5 max-lg:py-8 max-lg:text-2xl"
+          class="rounded-3xl px-10 py-16 text-white text-5xl text-center max-lg:px-5 max-lg:py-8 max-lg:text-2xl max-lg:rounded-t-none"
           style="background: linear-gradient(90deg, rgba(3, 40, 238, 0.30) 0%, rgba(1, 23, 136, 0.30) 100%)"
         >120 000 гривень</div>
       </div>
       <div
         style="background: rgba(255, 255, 255, 0.60); box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25)"
-        class="rounded-3xl p-16 text-center max-lg:p-8"
+        class="max-lg:hidden rounded-3xl p-16 text-center max-lg:p-8"
       >
         <img class="w-full " src="@/assets/g-2-lg.png" alt="">
       </div>
