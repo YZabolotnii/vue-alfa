@@ -14,6 +14,11 @@ const router = createRouter({
       name: 'netbox-2',
       component: () => import('../views/Netbox-2.vue'),
     },
+    {
+      path: '/geopuls',
+      name: 'geopuls',
+      component: () => import('../views/Geopuls.vue'),
+    },
   ],
 })
 
