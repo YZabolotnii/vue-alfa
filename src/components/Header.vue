@@ -34,8 +34,8 @@ const menu = [
 const mobileMenuOpen = ref(false)
 </script>
 <template>
-  <header class="">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between py-6 lg:px-8" aria-label="Global">
+  <header class="max-lg:mx-0 px-10 max-[1024px]:px-6">
+    <nav class="mx-auto flex items-center justify-between py-6" aria-label="Global">
       <div class="flex lg:flex-1 mr-10">
         <a href="#" class="-m-1.5 p-1.5 flex align-center">
           <img class="h-8 w-auto" src="@/assets/alfa.svg" alt="Logo" loading="lazy">/>
