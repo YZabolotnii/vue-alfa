@@ -62,7 +62,7 @@ const inshe = [
 </script>
 <template>
   <div class="max-w-7xl px-10 max-[1028px]:px-6 mx-auto">
-    <div class="w-full flex justify-between items-center max-w-7xl mx-auto my-16">
+    <div class="w-full flex justify-between items-center max-w-7xl mx-auto my-16 max-md:mt-4">
       <div class="w-1/2 max-lg:w-full max-lg:max-w-lg max-lg:mx-auto">
         <div class="text-white text-[60px] font-bold text-center mb-10 max-lg:text-[40px]">NETBOX 2 LITE</div>
         <div
@@ -86,10 +86,10 @@ const inshe = [
 
 
     <div class="mb-16">
-      <div class="text-white text-3xl mb-8">
+      <div class="text-white text-3xl max-md:text-xl mb-8">
         <span class="font-bold">NetBox2 Lite</span> — це нове покоління компактних інтелектуальних приймачів GNSS, розроблених для різноманітних геодезичних проектів із використанням найновіших функцій GNSS. Цей приймач оснащений сучасними необхідними технологіями, такими як модуль Bluetooth, датчик нахилу IM, внутрішній літійіонний акумулятор ємністю 6800 мАг тощо. може працювати в різних режимах роботи (Мережевий RTK, Статичний і PPK) на основі різних необхідних точності та умови.
       </div>
-      <div class="text-white text-3xl">
+      <div class="text-white text-3xl max-md:text-xl">
         <span class="font-bold">NetBox2 Lite</span> — це найекономічніший пакет GNSS, який ви можете придбати, щоб задовольнити свої технічні потреби на полі!
       </div>
     </div>
@@ -99,10 +99,10 @@ const inshe = [
     <div class="mb-8">
       <div
         style="background: rgba(1, 23, 136, 0.80)"
-        class="rounded-3xl p-16"
+        class="rounded-3xl p-16 max-md:p-8"
       >
 
-        <div class="text-white text-[40px] font-bold text-center uppercase mb-10">Технічні характеристики</div>
+        <div class="text-white text-[40px] max-md:text-[30px] font-bold uppercase mb-10 max-md:mb-5">Технічні характеристики</div>
 
         <div class="w-full h-full flex text-white">
           <div class="w-1/2 flex">
@@ -137,9 +137,9 @@ const inshe = [
 <!--  white  -->
 
     <div class="mb-8">
-      <div class="rounded-3xl p-16 bg-white text-[#0328EE]">
+      <div class="rounded-3xl p-16 max-md:p-8 bg-white text-[#0328EE]">
 
-        <div class=" text-[40px] font-bold text-center uppercase mb-10">ТОЧНІСТЬ</div>
+        <div class=" text-[40px] max-md:text-[30px] font-bold uppercase mb-10 max-md:mb-5">ТОЧНІСТЬ</div>
 
         <div v-for="item in tech_w" :key="item.id" class="w-full h-full flex text-white">
           <div class="w-1/2 flex">
@@ -159,15 +159,15 @@ const inshe = [
 
 <!--  Blocks  -->
 
-    <div class="flex w-full gap-6">
+    <div class="flex max-md:flex-col w-full gap-6 mb-16">
 
-      <div class="w-1/2 ">
+      <div class="w-1/2 max-md:w-full">
         <Tech class="mb-6" header="ФІЗИЧНІ ВЛАСТИВОСТІ" :about="phis" />
         <Tech class="mb-6" header="IMU" :about="IMU" />
         <Tech header="ФОРМАТИ ІНФОРМАЦІЇ" :about="info" />
       </div>
 
-      <div class="w-1/2 ">
+      <div class="w-1/2 max-md:w-full">
         <Tech class="mb-6" header="БАТАРЕЯ " :about="battery" />
         <div style="background: rgba(1, 23, 136, 0.80)" class="rounded-3xl p-8 bg-white text-white mb-6">
           <div class="text-[32px] font-bold uppercase mb-4">ЗБЕРІГАННЯ</div>

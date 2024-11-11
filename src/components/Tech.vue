@@ -8,7 +8,7 @@ defineProps({
 </script>
 <template>
   <div style="background: rgba(1, 23, 136, 0.80)" class="rounded-3xl p-8 bg-white text-white">
-    <div class=" text-[32px] font-bold uppercase mb-4">{{ header }}</div>
+    <div class=" text-[30px] font-bold uppercase mb-4">{{ header }}</div>
 
     <div v-for="item in about" :key="item.id" class="w-full h-full flex text-white">
       <div class="w-1/2 flex">
